@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mada", sans-serif;
+  height: 100vh;
+  background-color: #ececeb;
+  color: #2a2b2d;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  position: fixed;
+  background-color: #ececeb;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link:hover {
+  opacity: 0.9;
+}
+
+.main-section:first-child {
+  margin-top: 2rem;
+}
+
+.main-section:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-top: 7rem;
+}
+
+.main-section header {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-section p {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  text-align: justify;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.main-section ul {
+  padding: 1rem 1rem 1rem 2.5rem;
+  text-align: justify;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.main-section ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.main-section div {
+  margin: 1rem 1rem 1rem 3rem;
+  padding: 2rem;
+  background-color: rgba(128, 128, 128, 0.2);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  body {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+  }
+
+  #navbar {
+    border-right: 3px solid #000;
+    height: 100vh;
+    position: static;
+  }
+
+  #navbar header {
+    border-bottom: 2px solid #000;
+    margin-bottom: 3rem;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #main-doc {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .main-section {
+    padding-top: 1rem;
+  }
+
+  .main-section header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .main-section p,
+  .main-section ul {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 350px 1fr;
+  }
+
+  #navbar header {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .main-section header {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section header {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .main-section p,
+  .main-section ul {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}

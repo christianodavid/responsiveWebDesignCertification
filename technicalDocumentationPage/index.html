@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentação do Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Tailwind CSS</header>
+      <ul>
+        <li><a class="nav-link" href="#Introdução">Introdução</a></li>
+        <li><a class="nav-link" href="#Instalação">Instalação</a></li>
+        <li>
+          <a class="nav-link" href="#Utilização_Básica">Utilização Básica</a>
+        </li>
+        <li><a class="nav-link" href="#Componentes">Componentes</a></li>
+        <li><a class="nav-link" href="#Personalização">Personalização</a></li>
+        <li><a class="nav-link" href="#Referências">Referências</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introdução">
+        <header>Introdução</header>
+        <p>
+          O Tailwind CSS é um framework CSS de utilidade que permite a criação
+          de interfaces de usuário altamente personalizáveis e responsivas. Ele
+          fornece classes utilitárias para estilizar elementos HTML sem escrever
+          CSS personalizado.
+        </p>
+        <p>
+          O Tailwind CSS se destaca pela sua abordagem baseada em classes que
+          facilita o desenvolvimento e a manutenção de interfaces ricas e
+          flexíveis.
+        </p>
+        <div>
+          <code> // Exemplo de classe utilitária do Tailwind CSS</code>
+          <code>
+            div class="bg-blue-500 text-white p-2 rounded-md"> Botão /div>
+          </code>
+        </div>
+        <ul>
+          <li>O framework é altamente personalizável.</li>
+          <li>É amplamente utilizado em desenvolvimento web moderno.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Instalação">
+        <header>Instalação</header>
+        <p>
+          Para começar a usar o Tailwind CSS, você pode instalá-lo via npm ou
+          incluí-lo diretamente em seu projeto HTML.
+        </p>
+        <div>
+          <code>npm install tailwindcss</code>
+        </div>
+        <p>
+          Você também precisa configurar o Tailwind CSS em seu projeto antes de
+          usá-lo.
+        </p>
+        <ul>
+          <li>
+            Execute <code>npx tailwindcss init</code> para gerar um arquivo de
+            configuração.
+          </li>
+          <li>
+            Personalize o arquivo de configuração de acordo com suas
+            necessidades.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Utilização_Básica">
+        <header>Utilização Básica</header>
+        <p>
+          O Tailwind CSS fornece uma ampla gama de classes utilitárias que podem
+          ser aplicadas diretamente aos elementos HTML. Por exemplo, para
+          estilizar um botão, você pode usar as classes:
+        </p>
+        <div><code>bg-blue-500 text-white py-2 px-4 rounded</code></div>
+        <p>Aqui está um exemplo de como criar um botão com Tailwind CSS:</p>
+        <div>
+          <code>
+            button class="bg-blue-500 text-white py-2 px-4 rounded-md"> Meu
+            Botão /button>
+          </code>
+        </div>
+        <ul>
+          <li>As classes são autoexplicativas e personalizáveis.</li>
+          <li>
+            Você pode criar rapidamente layouts complexos com classes
+            utilitárias.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="Componentes">
+        <header>Componentes</header>
+        <p>
+          O Tailwind CSS oferece uma variedade de componentes pré-construídos,
+          como barras de navegação, cartões, modais e muito mais. Você pode
+          personalizá-los de acordo com suas necessidades.
+        </p>
+        <p>Aqui está um exemplo de um cartão criado com Tailwind CSS:</p>
+        <div>
+          <code> div class="bg-white p-4 shadow-md"> </code>
+          <code> h3 class="text-xl font-bold"> Meu Cartão /h3> </code>
+          <code> p> Conteúdo do cartão. /p> </code>
+          <code> /div> </code>
+        </div>
+        <ul>
+          <li>Os componentes economizam tempo de desenvolvimento.</li>
+          <li>Você pode adaptá-los ao seu design específico.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Personalização">
+        <header>Personalização</header>
+        <p>
+          O Tailwind CSS permite que você personalize suas classes utilitárias,
+          cores e configurações diretamente no arquivo de configuração. Você
+          pode personalizar cores, tamanhos de fonte, margens, espaçamentos e
+          muito mais.
+        </p>
+        <p>
+          Personalize o Tailwind CSS para atender às necessidades do seu
+          projeto:
+        </p>
+        <div>
+          <code>// Arquivo de configuração tailwind.config.js</code>
+          <code>module.exports = {</code>
+          <code> theme: {</code>
+          <code> extend: {</code>
+          <code> colors: {</code>
+          <code> 'primary': '#3490dc',</code>
+          <code> },</code>
+          <code> fontSize: {</code>
+          <code> '2xl': '1.75rem',</code>
+          <code> },</code>
+          <code> },</code>
+          <code>}</code>
+        </div>
+        <ul>
+          <li>Personalização flexível.</li>
+          <li>Adapte o Tailwind CSS ao estilo da sua marca.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Referências">
+        <header>Referências</header>
+        <p>
+          Aqui estão algumas referências úteis relacionadas ao Tailwind CSS:
+        </p>
+        <ul>
+          <li>
+            <a href="https://tailwindcss.com/docs" target="_blank"
+              >Documentação Oficial do Tailwind CSS</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/tailwindlabs/tailwindcss"
+              target="_blank"
+              >Repositório do Tailwind CSS no GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
