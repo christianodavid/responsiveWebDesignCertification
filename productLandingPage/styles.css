@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mada", sans-serif;
+  background-color: #ececeb;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ececeb;
+  z-index: 100;
+}
+
+#header-img {
+  height: 2rem;
+  width: 2rem;
+}
+
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+#Hero {
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+#Hero h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+#Hero form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#email {
+  width: 16rem;
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+
+#email::placeholder {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+#submit {
+  width: 8rem;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-color: #2a2b2d;
+  color: #ececeb;
+  border: none;
+  border-radius: 5px;
+}
+
+#Recursos {
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.features div i {
+  width: 51.44px;
+  height: 48px;
+}
+
+.features div {
+  padding: 1rem;
+}
+
+.features div h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  max-width: 50ch;
+}
+
+.features div p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: justify;
+  max-width: 90ch;
+}
+
+#Demonstração {
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#Demonstração iframe {
+  height: 315px;
+  width: 100%;
+  max-width: 640px;
+}
+
+#Preços {
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pricing h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.pricing div p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pricing div ul {
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 35ch;
+}
+
+.pricing button {
+  align-self: center;
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  background-color: #2a2b2d;
+  color: #ececeb;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  #header {
+    flex-direction: row;
+  }
+
+  #header-img {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #Hero h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .features {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .features div h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .features div p,
+  .pricing div ul {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .pricing h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .pricing div p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #header-img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  #Hero h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  #email {
+    width: 20rem;
+  }
+
+  #submit {
+    width: 10rem;
+  }
+
+  .features div h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .features div p,
+  .pricing div ul {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .pricing h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .pricing div p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header-img {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  #Hero h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .features div h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .features div p,
+  .pricing div ul {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .pricing h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .pricing div p {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
