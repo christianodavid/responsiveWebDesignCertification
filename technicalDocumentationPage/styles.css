@@ -58,7 +58,7 @@ body {
   margin-top: 2rem;
 }
 
-.main-section:not(:last-child) {
+.main-section {
   margin-bottom: 2rem;
   padding-top: 7rem;
 }
