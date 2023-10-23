@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário do Paciente Odontológico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulário do Paciente Odontológico</h1>
+    <p id="description">
+      Preencha o formulário abaixo com as suas informações.
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Nome:</label>
+      <input type="text" id="name" placeholder="Digite seu nome" required />
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required />
+
+      <label for="number" id="number-label">Idade:</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Digite sua idade"
+        required
+        min="0"
+        max="100"
+      />
+
+      <label for="dropdown">Motivo da Consulta:</label>
+      <select name="dropdown" id="dropdown">
+        <option value="routine-checkup">Consulta de Rotina</option>
+        <option value="root-canal-treatment">Tratamento de Canal</option>
+        <option value="tooth-extraction">Extração de Dente</option>
+        <option value="teeth-whitening">Clareamento Dental</option>
+        <option value="orthodontics">Ortodontia</option>
+        <option value="dental-implant">Implante Dentário</option>
+      </select>
+
+      <label for="additional-services">Serviços Adicionais:</label>
+      <label>
+        <input
+          type="checkbox"
+          name="additional-services"
+          value="dental-cleaning"
+        />
+        Limpeza Dental
+      </label>
+      <label>
+        <input type="checkbox" name="additional-services" value="x-rays" />
+        Raios-X
+      </label>
+      <label>
+        <input type="checkbox" name="additional-services" value="orthopedics" />
+        Ortopedia
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          name="additional-services"
+          value="pediatric-dentistry"
+        />
+        Odontopediatria
+      </label>
+
+      <label>Horário:</label>
+      <label>
+        <input type="radio" name="preferred-time" value="manha" />
+        Manhã
+      </label>
+      <label>
+        <input type="radio" name="preferred-time" value="tarde" />
+        Tarde
+      </label>
+      <label>
+        <input type="radio" name="preferred-time" value="noite" />
+        Noite
+      </label>
+      <label>
+        <input type="radio" name="preferred-time" value="fim-de-semana" />
+        Fim de Semana
+      </label>
+      <label for="comments">Comentários adicionais:</label>
+      <textarea
+        id="comments"
+        name="comentarios"
+        rows="4"
+        cols="50"
+        placeholder="Deixe seus comentários aqui"
+      ></textarea>
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>

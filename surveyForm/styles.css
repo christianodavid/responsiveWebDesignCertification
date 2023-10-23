@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mada", sans-serif;
+  background-color: #ececeb;
+  color: #2a2b2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+#description {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+input,
+select {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+#submit {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #2a2b2d;
+  color: #ececeb;
+  border: none;
+}
+
+@media (min-width: 640px) {
+  #title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  #description,
+  label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #survey-form {
+    padding: 2rem;
+  }
+
+  #submit {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  #description,
+  label {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  #description,
+  label {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
